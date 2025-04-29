@@ -38,23 +38,42 @@ These datasets were merged to enhance the diversity and size of the training dat
 
 ##  Models Implemented
 
-# Supervised Machine Learning Models:
+# Supervised Machine Learning Models for mendeley dataset:
 
-Logistic Regression
+Logistic Regression (68%)
 
-K-Nearest Neighbors (KNN)
+K-Nearest Neighbors (KNN) (52%)
 
-Naive Bayes
+Naive Bayes  (81%) 
 
-Support Vector Machine (SVM)
+Support Vector Machine (SVM) (51%)
 
-# Ensemble Learning Models:
+# Ensemble Learning Models for mendeley dataset:
 
-Gradient Boosting Classifier
+Gradient Boosting Classifier (97%)
 
-Bagging Classifier (with Decision Tree)
+Bagging Classifier (with Decision Tree) (96%)
 
-Stacking Classifier (Random Forest + Logistic Regression)
+Stacking Classifier (Random Forest + Logistic Regression) (98%)
+
+# Supervised Machine Learning Models for mendeley dataset:
+
+Logistic Regression (70%)
+
+K-Nearest Neighbors (KNN) (69%)
+
+Naive Bayes  (87%) 
+
+Support Vector Machine (SVM) (89%)
+
+# Ensemble Learning Models for mendeley dataset:
+
+Gradient Boosting Classifier (77%)
+
+Bagging Classifier (with Decision Tree) (88%)
+
+Stacking Classifier (Random Forest + Logistic Regression) (85%)
+
 
 ## Evaluation Metrics
 
@@ -98,7 +117,14 @@ Mlxtend (for stacking)
 
 SMOTE (for handling class imbalance)
 
+##  Observations & Insights
+-When working with larger and more diverse datasets, ensemble models such as Gradient Boosting, Bagging, and Stacking consistently outperformed individual supervised models.
 
+-This is primarily because ensemble models have a higher capacity to capture complex patterns and generalize better by combining the strengths of multiple learners.
+
+-Individual supervised models like Logistic Regression, SVM, KNN, and Naive Bayes performed reasonably well, but they often struggled with overfitting or underfitting on the larger dataset.
+
+-In contrast, ensemble models demonstrated robustness, higher precision, and better recall, making them more suitable for real-world healthcare applications where data can be high-dimensional and imbalanced.
 
 
 
